@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar'
+import Header from './components/Header'
+import { Outlet } from 'react-router'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Navbar />
-    </>
+    <div className='flex bg-slate-900'>
+      <Header />
+      <Outlet />
+    </div>
   )
 }
 
