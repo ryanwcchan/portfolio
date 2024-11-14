@@ -4,7 +4,7 @@ import { Outlet } from 'react-router'
 function App() {
 
   return (
-    <div className='flex bg-slate-900'>
+    <div className='flex'>
       <Header />
       <Outlet />
     </div>
