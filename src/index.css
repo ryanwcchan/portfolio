@@ -15,8 +15,11 @@ h1, h2, h3, .bold {
   /* box-shadow: 0 0 55px rgba(255, 221, 96, 0.5); */
 }
 
-.navItem, .navItem a, .navItem i {
-  border-radius: 50%;
-  background-color: transparent;
-  background: none;
+.blueShadow {
+  box-shadow: 0 0 1px #60a5fa;
+}
+
+.blueShadow:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 0 #60a5fa;
 }

@@ -1,11 +1,16 @@
 import { NavLink } from "react-router-dom"
 
-export default function NavItem({ location, children }) {
+export default function NavItem({ location, children, updateTab, tab }) {
   return (
-    <li className="navItem p-4 rounded-full hover:text-yellow-400">
-        <NavLink 
-          to={location}
-        >{children}</NavLink>
-    </li>
+    <NavLink to={location}>
+        <li onClick={() => updateTab(location)}
+            className={"navItem py-6 p-4 " +
+                (location === tab 
+                    ? "bg-blue-900 hover:text-blue-400 text-white" 
+                    : " hover:text-blue-900")
+            }>
+            {children}
+        </li>
+    </NavLink>
   )
 }
