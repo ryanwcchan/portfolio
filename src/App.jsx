@@ -4,9 +4,11 @@ import { Outlet } from 'react-router'
 function App() {
 
   return (
-    <div className='flex'>
+    <div className='flex bg-gradient-to-tr from-slate-950 to-slate-800 text-white'>
       <Header />
-      <Outlet />
+      <main className='flex flex-col w-full m-10'>
+        <Outlet />
+      </main>
     </div>
   )
 }
