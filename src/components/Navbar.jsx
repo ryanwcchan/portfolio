@@ -9,25 +9,28 @@ export default function Navbar() {
     console.log(tab)
   }
 
+  const navItems = [
+    { location: '/', icon: 'fa-solid fa-house' },
+    { location: 'about', icon: 'fa-solid fa-user' },
+    { location: 'projects', icon: 'fa-solid fa-layer-group' },
+    { location: 'resume', icon: 'fa-solid fa-briefcase' },
+    { location: 'contact', icon: 'fa-solid fa-people-arrows' },
+  ];
+
   return (
     <nav className="h-full p-6 flex flex-col justify-center items-center">
         <ul className="rounded-full h-fit text-white grid grid-rows-5 text-center 
         justify-center items-center shadow overflow-hidden bg-blue-500">
-          <NavItem location="/" updateTab={updateTab} tab={tab}>
-            <i className="fa-solid fa-house"></i>
-          </NavItem>
-          <NavItem location="about" updateTab={updateTab} tab={tab}>
-            <i className="fa-solid fa-user"></i>
-          </NavItem>
-          <NavItem location="projects" updateTab={updateTab} tab={tab}>
-            <i className="fa-solid fa-layer-group"></i>
-          </NavItem>
-          <NavItem location="resume" updateTab={updateTab} tab={tab}>
-            <i className="fa-solid fa-briefcase"></i>
-          </NavItem>
-          <NavItem location="contact" updateTab={updateTab} tab={tab}>
-            <i className="fa-solid fa-people-arrows"></i>
-          </NavItem>
+          {navItems.map((item, index) => (
+            <NavItem 
+              key={index} 
+              location={item.location} 
+              updateTab={updateTab} 
+              tab={tab} 
+            >
+              <i className={item.icon}></i>
+            </NavItem>
+          ))}
         </ul>
     </nav>
   )
