@@ -18,24 +18,25 @@ export default function Navbar() {
   ];
 
   return (
-    <div className='fixed h-full border-r-4 border-blue-900 px-2 bg-gradient-to-r
+    <header className='fixed h-full border-r-4 border-blue-900 px-2 bg-gradient-to-r
     from-slate-800 to-slate-950'>
-      <nav className="h-full p-6 flex flex-col justify-center items-center">
-        <ul className="rounded-full h-fit text-white grid grid-rows-5 text-center 
-        justify-center items-center shadow overflow-hidden bg-blue-500">
-          {navItems.map((item, index) => (
-            <NavItem 
-              key={index} 
-              location={item.location} 
-              updateTab={updateTab} 
-              tab={tab} 
-            >
-              <i className={item.icon}></i>
-            </NavItem>
-          ))}
-        </ul>
-      </nav>
-    </div>
-    
+      <div className="flex flex-col justify-center items-center h-full">  
+        <nav className="h-full p-6 flex flex-col justify-center items-center">
+          <ul className="rounded-full h-fit text-white grid grid-rows-5 text-center
+          justify-center items-center shadow overflow-hidden bg-blue-500">
+            {navItems.map((item, index) => (
+              <NavItem
+                key={index}
+                location={item.location}
+                updateTab={updateTab}
+                tab={tab}
+              >
+                <i className={item.icon}></i>
+              </NavItem>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
   )
 }

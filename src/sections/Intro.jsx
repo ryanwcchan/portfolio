@@ -19,20 +19,20 @@ export default function Intro() {
             ))}
         </div>
         <div className="flex flex-col gap-6 md:flex-row justify-center items-center py-6">
-            <div className="w-full h-full">
+            <div className="w-full md:w-1/2 md:max-w-[45%] lg:max-w-[40%]">
                 <img
-                    className="object-cover w-full h-96 border-4 border-blue-500 rounded-xl object-center"
+                    className="w-full h-auto max-h-[400px] md:max-h-[450px] lg:max-h-[500px] min-h-[250px] object-cover border-4 border-red-500 rounded-xl object-center"
                     src="profile-picture.jpeg"
                     alt="Profile Picture"
                 />
             </div>
-            <div className="flex flex-col justify-center space-y-6">
+            <div className="flex flex-col justify-center space-y-6 md:w-1/2 md:max-w-[55%] lg:max-w-[60%]">
                 <h1 className="text-3xl font-semibold">I love building stuff</h1>
                 <p className="w-full my-2 text-md md:text-lg">
                 Ever since I was a kid, I have always been passionate about building and creating things. From piecing together my own Lego creations to assembling computers with my dad and creating my first game, the joy of creation has always driven me forward.
                 </p>
                 <p className="w-full my-2 text-md md:text-lg">
-                Now, as a software developer, I bring that same curiosity and passion to crafting innovative solutions through clean, functional code. Whether it’s building user-friendly interfaces or solving challenging problems, I thrive on turning ideas into reality.
+                Now, as a software developer, I bring that same curiosity and passion to crafting innovative solutions through clean, functional code. Whether it's building user-friendly interfaces or solving challenging problems, I thrive on turning ideas into reality.
                 </p>
             </div>
         </div>
