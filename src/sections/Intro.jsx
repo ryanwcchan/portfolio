@@ -18,10 +18,10 @@ export default function Intro() {
                 </div>
             ))}
         </div>
-        <div className="flex flex-col gap-6 md:flex-row justify-center items-center py-6">
-            <div className="w-full md:w-1/2 md:max-w-[45%] lg:max-w-[40%]">
+        <div className="flex flex-col gap-20 md:flex-row justify-center items-center py-6">
+            <div className="md:w-1/3 md:max-w-[40%] lg:max-w-[30%]">
                 <img
-                    className="w-full h-auto max-h-[400px] md:max-h-[450px] lg:max-h-[500px] min-h-[250px] object-cover border-4 border-red-500 rounded-xl object-center"
+                    className="h-auto max-h-[400px] md:max-h-[450px] lg:max-h-[500px] min-h-[250px] object-cover border-4 border-blue-500 rounded-xl object-center"
                     src="profile-picture.jpeg"
                     alt="Profile Picture"
                 />

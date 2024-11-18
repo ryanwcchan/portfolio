@@ -1,19 +1,11 @@
 import NavItem from "../components/NavItem"
-import { useState } from "react"
 
-export default function Navbar() {
-  const [tab, setTab] = useState('/')
-
-  function updateTab(location) {
-    setTab(location)
-    console.log(tab)
-  }
-
+export default function Navbar({ tab, updateTab }) {
   const navItems = [
     { location: '/', icon: 'fa-solid fa-house' },
     { location: 'about', icon: 'fa-solid fa-user' },
     { location: 'projects', icon: 'fa-solid fa-layer-group' },
-    { location: 'resume', icon: 'fa-solid fa-briefcase' },
+    { location: 'work', icon: 'fa-solid fa-briefcase' },
     { location: 'contact', icon: 'fa-solid fa-people-arrows' },
   ];
 
@@ -24,9 +16,9 @@ export default function Navbar() {
         <nav className="h-full p-6 flex flex-col justify-center items-center">
           <ul className="rounded-full h-fit text-white grid grid-rows-5 text-center
           justify-center items-center shadow overflow-hidden bg-blue-500">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <NavItem
-                key={index}
+                key={item.location}
                 location={item.location}
                 updateTab={updateTab}
                 tab={tab}

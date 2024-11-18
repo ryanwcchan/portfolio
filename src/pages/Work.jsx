@@ -1,5 +1,5 @@
 
-export default function Resume() {
+export default function Work() {
   return (
     <div>Resume</div>
   )
