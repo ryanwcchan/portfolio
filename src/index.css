@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 * {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 h1, h2, h3, .bold {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .navItem i {

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className=''>
+    <div className='min-h-screen h-full w-full'>
         <h1 className='text-5xl font-semibold m-6'>About Me</h1>
 
         <div className='rounded-xl shadow p-4 border-4 border-blue-400'>
