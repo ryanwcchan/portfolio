@@ -1,6 +1,7 @@
 import Hero from "../sections/Hero"
 import Block from "../components/Block"
 import Intro from "../sections/Intro"
+import Projects from "../sections/Projects"
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <Block />
         <Intro />
         <Block />
+        <Projects />
     </div>
   )
 }
