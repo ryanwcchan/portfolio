@@ -1,4 +1,4 @@
-import NavItem from "./NavItem"
+import NavItem from "../components/NavItem"
 import { useState } from "react"
 
 export default function Navbar() {
@@ -18,7 +18,9 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="h-full p-6 flex flex-col justify-center items-center">
+    <div className='fixed h-full border-r-4 border-blue-900 px-2 bg-gradient-to-r
+    from-slate-800 to-slate-950'>
+      <nav className="h-full p-6 flex flex-col justify-center items-center">
         <ul className="rounded-full h-fit text-white grid grid-rows-5 text-center 
         justify-center items-center shadow overflow-hidden bg-blue-500">
           {navItems.map((item, index) => (
@@ -32,6 +34,8 @@ export default function Navbar() {
             </NavItem>
           ))}
         </ul>
-    </nav>
+      </nav>
+    </div>
+    
   )
 }

@@ -9,7 +9,7 @@ export default function Intro() {
   ]
 
   return (
-    <div className="flex flex-col space-y-4 my-auto max-w-6xl mb-10 h-min-screen">
+    <div className="flex flex-col space-y-4 max-w-6xl mb-10 h-min-screen">
         <h1 className="text-4xl text-blue-500 py-6">My <span className="underline decoration-red-500 font-semibold">Skills</span></h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
             {skills.map((skill, index) => (
@@ -19,9 +19,9 @@ export default function Intro() {
             ))}
         </div>
         <div className="flex flex-col gap-6 md:flex-row justify-center items-center py-6">
-            <div className="w-full h-full overflow-hidden">
+            <div className="w-full h-full">
                 <img
-                    className="object-contain w-full h-full"
+                    className="object-cover w-full h-96 border-4 border-blue-500 rounded-xl object-center"
                     src="profile-picture.jpeg"
                     alt="Profile Picture"
                 />
