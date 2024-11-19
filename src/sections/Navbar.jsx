@@ -62,38 +62,33 @@ export default function Navbar() {
 
   return (
     <header ref={sidebarRef}>
-        {/* Mobile menu button */}
-        <div className='fixed top-0 left-0 z-50'>
-          <button
-            onClick={toggleMenu}
-            className={`transform duration-100 ease-in-out ${isOpen ? 'translate-x-[150%]' : 'translate-x-0' } text-neutral-400 hover:text-white focus:outline-none lg:hidden flex p-4`}
-            aria-label='toggle menu'
-          >
-            <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle" className='w-12 h-12' />
-          </button>
-        </div>
+      {/* Mobile menu button */}
+      <div className='fixed top-0 left-0 z-50'>
+        <button
+          onClick={toggleMenu}
+          className={`transform duration-100 ease-in-out ${isOpen ? 'translate-x-[150%]' : 'translate-x-0' } text-neutral-400 hover:text-white focus:outline-none lg:hidden flex p-4`}
+          aria-label='toggle menu'
+        >
+          <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle" className='w-12 h-12' />
+        </button>
+      </div>
 
-        {/* Sidebar */}
-        <div className={`lg:translate-x-0 ${isOpen ? "translate-x-0" : "translate-x-[-100%]"}  transition-all duration-300 ease-in-out fixed h-full border-r-4 border-blue-900 px-2 bg-gradient-to-r after:first:from-slate-800 to-slate-950`}>
-          <div className="flex flex-col justify-center items-center h-full">
-            <nav className="h-screen p-6 flex flex-col justify-center items-center">
-              <NavItems pages={pages} />
-            </nav>
-          </div>
+      {/* Sidebar */}
+      <div className={`lg:translate-x-0 ${isOpen ? "translate-x-0" : "translate-x-[-100%]"}  transition-all duration-300 ease-in-out fixed h-full border-r-4 border-blue-900 px-2 bg-gradient-to-r after:first:from-slate-800 to-slate-950`}>
+        <NavLink to={'/'} className="z-50 cursor-pointer">
+          <h1 className="text-3xl text-white max-w-[100px]
+          break-words text-center absolute m-2 mt-6 ml-5">
+            <span className="text-green-500 font-bold">{"{"}</span>
+            <span className="text-blue-500 font-bold hover:text-blue-900">RC</span>
+            <span className="text-green-500 font-bold">{"}"}</span>
+          </h1>
+        </NavLink>
+        <div className="flex flex-col justify-center items-center h-full">
+          <nav className="h-screen p-6 flex flex-col justify-center items-center">
+            <NavItems pages={pages} />
+          </nav>
         </div>
-
-      {/* <div className={`fixed top-0 left-0 w-full transition-all duration-300 ease-in-out 
-      ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'} overflow-hidden lg:hidden`}>
-        <div className='bg-gradient-to-r from-slate-800 to-slate-950'>
-          <ul>
-            {pages.map((item) => (
-              <NavLink key={item.location} to={item.location}>
-                <li key={item.location}></li>
-              </NavLink>
-            ))}
-          </ul>
-        </div>
-      </div>   */}
+      </div>
     </header>
   )
 }

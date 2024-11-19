@@ -6,7 +6,7 @@ function SkillsList({ list, title }) {
             <h1 className="text-2xl font-semibold">{title} </h1>
             <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 mt-4 items-center justify-center">
                 {list.map((skill, index) => (
-                    <div key={index} className="bg-gray-600 p-2 rounded-lg text-center font-semibold flex items-center justify-center h-fit">
+                    <div key={index} className="bg-green-600 p-2 rounded-lg text-center font-bold flex items-center justify-center h-fit">
                     {skill}
                     </div>
                 ))}
@@ -54,7 +54,7 @@ export default function Intro() {
 
   return (
     <div className="flex flex-col space-y-4 max-w-6xl mb-10 h-min-screen w-full">
-        <h1 className="text-4xl text-blue-500 py-6">My <span className="underline decoration-red-500 font-semibold">Skills</span></h1>
+        <h1 className="text-4xl text-blue-500 py-6 font-bold">My <span className="underline decoration-green-500 font-bold">Skills</span></h1>
         <SkillsList list={frontendSkills} title={"Frontend"} />
         <SkillsList list={backendSkills} title={"Backend"} />
         <SkillsList list={tools} title={"Other/Tools"} />
