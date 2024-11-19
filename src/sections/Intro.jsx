@@ -1,4 +1,5 @@
-import { NavLink, useNavigate } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import { frontendSkills, backendSkills, tools } from "../constants"
 
 function SkillsList({ list, title }) {
     return (
@@ -16,42 +17,6 @@ function SkillsList({ list, title }) {
 }
 
 export default function Intro() {
-  const navigate = useNavigate()
-
-  const frontendSkills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Tailwind CSS",
-    "Bootstrap",
-    "Next.js",
-    "Angular",
-    "PHP",
-    "jQuery",
-  ]
-
-  const backendSkills = [
-    "Python",
-    "Node.js",
-    "Express.js",
-    "Django",
-    "Flask",
-    "MongoDB",
-    "MySQL",
-    "PostgreSQL",
-  ]
-
-  const tools = [
-    "Git",
-    "GitHub",
-    "Docker",
-    "AWS",
-    "Linux",
-    "Webpack",
-  ]
-
   return (
     <div className="flex flex-col space-y-4 max-w-6xl mb-10 h-min-screen w-full">
         <h1 className="text-4xl text-blue-500 py-6 font-bold">My <span className="underline decoration-green-500 font-bold">Skills</span></h1>

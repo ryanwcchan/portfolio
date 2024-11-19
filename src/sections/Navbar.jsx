@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
+import { pages } from "../constants";
 
 function NavItems({ pages }) {
   return (
@@ -51,14 +52,6 @@ export default function Navbar() {
     setIsOpen((prevState) => !prevState)
     console.log(isOpen)
   }
-
-  const pages = [
-    { location: '/', icon: 'fa-solid fa-house' },
-    { location: 'about', icon: 'fa-solid fa-user' },
-    { location: 'projects', icon: 'fa-solid fa-layer-group' },
-    { location: 'work', icon: 'fa-solid fa-briefcase' },
-    { location: 'contact', icon: 'fa-solid fa-people-arrows' },
-  ];
 
   return (
     <header ref={sidebarRef}>

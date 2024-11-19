@@ -1,3 +1,11 @@
+export const pages = [
+    { location: '/', icon: 'fa-solid fa-house' },
+    { location: 'about', icon: 'fa-solid fa-user' },
+    { location: 'projects', icon: 'fa-solid fa-layer-group' },
+    { location: 'work', icon: 'fa-solid fa-briefcase' },
+    { location: 'contact', icon: 'fa-solid fa-people-arrows' },
+];
+
 export const myProjects = [
     {
         title: "Shopping Cart",
@@ -46,3 +54,36 @@ export const experience = [
         endDate: "September 2019",
     }
 ]
+
+export const frontendSkills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Tailwind CSS",
+    "Bootstrap",
+    "Angular",
+    "React Native",
+  ]
+
+export const backendSkills = [
+    "Python",
+    "Node.js",
+    "Express.js",
+    "Django",
+    "Flask",
+    "MongoDB",
+    "MySQL",
+    "PostgreSQL",
+  ]
+
+export const tools = [
+    "Git",
+    "GitHub",
+    "Docker",
+    "AWS",
+    "Linux",
+    "Webpack",
+    // "EJS",
+  ]
