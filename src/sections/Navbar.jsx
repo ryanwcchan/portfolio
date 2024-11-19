@@ -63,7 +63,7 @@ export default function Navbar() {
   return (
     <header ref={sidebarRef}>
       {/* Mobile menu button */}
-      <div className='fixed top-0 left-0 z-50'>
+      <div className='fixed top-0 left-0'>
         <button
           onClick={toggleMenu}
           className={`transform duration-100 ease-in-out ${isOpen ? 'translate-x-[150%]' : 'translate-x-0' } text-neutral-400 hover:text-white focus:outline-none lg:hidden flex p-4`}
@@ -75,14 +75,18 @@ export default function Navbar() {
 
       {/* Sidebar */}
       <div className={`lg:translate-x-0 ${isOpen ? "translate-x-0" : "translate-x-[-100%]"}  transition-all duration-300 ease-in-out fixed h-full border-r-4 border-blue-900 px-2 bg-gradient-to-r after:first:from-slate-800 to-slate-950`}>
-        <NavLink to={'/'} className="z-50 cursor-pointer">
-          <h1 className="text-3xl text-white max-w-[100px]
-          break-words text-center absolute m-2 mt-6 ml-5">
-            <span className="text-green-500 font-bold">{"{"}</span>
-            <span className="text-blue-500 font-bold hover:text-blue-900">RC</span>
-            <span className="text-green-500 font-bold">{"}"}</span>
-          </h1>
-        </NavLink>
+        <div className="cursor-pointer" onClick={() => console.log("Logo clicked")}>
+          <NavLink
+            to={'/'}
+          >
+            <h1 className="text-3xl text-white max-w-[100px]
+            break-words text-center absolute m-2 mt-6 ml-5">
+              <span className="text-green-500 font-bold">{"{"}</span>
+              <span className="text-blue-500 font-bold hover:text-blue-900">RC</span>
+              <span className="text-green-500 font-bold">{"}"}</span>
+            </h1>
+          </NavLink>
+        </div>
         <div className="flex flex-col justify-center items-center h-full">
           <nav className="h-screen p-6 flex flex-col justify-center items-center">
             <NavItems pages={pages} />
