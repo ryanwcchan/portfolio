@@ -90,8 +90,8 @@ export default function Navbar() {
         <button
           onClick={toggleMenu}
           className={`transform duration-100 ease-in-out ${
-            isOpen ? "translate-x-[250%]" : "translate-x-0"
-          }text-neutral-400 hover:text-white focus:outline-none lg:hidden 
+            isOpen ? "translate-x-[150%]" : "translate-x-0"
+          } focus:outline-none lg:hidden 
           flex p-4`}
           aria-label="toggle menu"
         >
@@ -102,7 +102,8 @@ export default function Navbar() {
               viewBox="0 0 24 24" 
               strokeWidth="1.5"
               stroke="currentColor" 
-              className="w-12 h-12 transition-all duration-300 ease-in-out text-black dark:text-white translate-x-[250%]"
+              className="w-12 h-12 transition-all duration-300 ease-in-out 
+              text-white bg-blue-500"
             >
               <path 
                 strokeLinecap="round" 

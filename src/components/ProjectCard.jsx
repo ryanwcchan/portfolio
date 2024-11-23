@@ -13,10 +13,12 @@ export default function ProjectCard({ title, img, tools }) {
             </div>
           ))}
         </div>
-        <img 
-            src={img ? img :"https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"} 
-            alt="" 
-        />
+        <div className="border-8 border-blue-500 rounded-lg overflow-hidden">
+          <img
+              src={img ? img :"https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"}
+              alt=""
+          />
+        </div>
     </div>
   )
 }

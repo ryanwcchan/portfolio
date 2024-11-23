@@ -8,14 +8,33 @@ export const pages = [
 
 export const myProjects = [
     {
+        id: 1,
         title: "Shopping Cart",
         description: "A simple shopping cart application built with React and React Router",
         image: "/images/shopping-cart.png",
         techStack: ["React", "React Router", "Vanilla CSS"],
         githubLink: "https://github.com/your-github-username/shopping-cart",
         demoLink: "https://your-demo-link.com/shopping-cart",
+    }, 
+    {
+        id: 2,
+        title: "Weather App",
+        description: "A weather app built with React and OpenWeather API",
+        image: "/images/weather-app.png",
+        techStack: ["React", "OpenWeather API", "CSS"],
+        githubLink: "https://github.com/your-github-username/weather-app",
+        demoLink: "https://your-demo-link.com/weather-app",
     }
 ]
+
+export const education = 
+    {
+        school: "Ontario Tech University",
+        degree: "Bachelor of Information Technology",
+        major: "Technology Management",
+        location: "Oshawa, ON",
+        duration: "Sept. 2019 - Jan. 2024",
+    }
 
 export const experience = [
     {
