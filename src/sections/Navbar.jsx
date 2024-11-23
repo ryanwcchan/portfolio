@@ -95,12 +95,44 @@ export default function Navbar() {
           flex p-4`}
           aria-label="toggle menu"
         >
-          <img
+          {isOpen ? (
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              strokeWidth="1.5"
+              stroke="currentColor" 
+              className="w-12 h-12 transition-all duration-300 ease-in-out text-black dark:text-white translate-x-[250%]"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                d="M6 18 18 6M6 6l12 12" 
+              />
+            </svg>
+          ) : (
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              strokeWidth="1.5" 
+              stroke="currentColor" 
+              className="w-12 h-12 transition-all duration-300 ease-in-out text-black dark:text-white"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" 
+              />
+            </svg>
+          )}
+          {/* <img
             src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
             alt="toggle"
             className={`w-12 h-12 transition-all duration-300 ease-in-out ${
-              isOpen ? "translate-x-[250%]" : ""}`}
-          />
+              isOpen ? "translate-x-[250%]" : ""
+            } fill-current text-black dark:text-white`}
+          /> */}
         </button>
       </div>
 
@@ -108,9 +140,9 @@ export default function Navbar() {
       <div
         className={`lg:translate-x-0 ${
           isOpen ? "translate-x-0" : "translate-x-[-100%]"
-        }  transition-all duration-300 ease-in-out fixed h-full border-r-4
-        border-blue-900 px-2 bg:white dark:bg-gradient-to-l
-        dark:after:first:from-slate-800 dark:to-slate-950`}
+        }  transition-all duration-300 ease-in-out fixed h-full border-r-0 dark:border-r-4
+        border-blue-900 px-2 bg-gradient-to-r from-slate-200 to-slate-300 dark:bg-gradient-to-l
+        dark:from-slate-800 dark:to-slate-950`}
       >
         <div
           className="cursor-pointer"
