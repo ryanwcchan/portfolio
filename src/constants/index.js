@@ -21,37 +21,54 @@ export const experience = [
     {
         id: 1,
         company: "Upwork",
-        position: "Freelance Web Developer",
-        startDate: "2024",
-        endDate: "Present",
+        title: "Freelance Web Developer",
+        duration: "2024 - Present",
+        bullets: [
+            "Provided web development services for clients",
+            "Collaborated with clients to develop custom web solutions",
+        ]
     },
     {
         id: 2,
         company: "Western Inventory Service",
-        position: "Inventory Supervisor",
-        startDate: "February 2024",
-        endDate: "Present",
+        title: "Inventory Supervisor",
+        duration: "February 2024 -Present",
+        bullets: [
+            "Managed inventory levels and ensured accurate tracking",
+            "Provided training and guidance to employees",
+        ]
     },
     {
         id: 3,
         company: "Western Inventory Service",
-        position: "Inventory Associate",
-        startDate: "April 2022",
-        endDate: "September 2022",
+        title: "Inventory Associate",
+        duration: "April 2022 - September 2022",
+        bullets: [
+            "Managed and maintained inventory in a warehouse",
+            "Prepared and shipped orders",
+            "Provided customer service",
+        ]
     },
     {
         id: 4,
         company: "Facedrive Inc.",
-        position: "Frontend Developer & Marketing Intern",
-        startDate: "April 2021",
-        endDate: "August 2021",
+        title: "Frontend Developer & Marketing Intern",
+        duration: "April 2021 - August 2021",
+        bullets: [
+            "Developed a web application using React and Node.js",
+            "Implemented a new feature that improved user experience",
+            "Collaborated with a team of engineers to launch a new product",
+        ]
     },
     {
         id: 5,
         company: "Kumon",
-        position: "Tutor & Data Entry",
-        startDate: "May 2017",
-        endDate: "September 2019",
+        title: "Tutor & Data Entry",
+        duration: "May 2017 - September 2019",
+        bullets: [
+            "Tutored students in math and reading",
+            "Provided data entry for a company",
+        ]
     }
 ]
 

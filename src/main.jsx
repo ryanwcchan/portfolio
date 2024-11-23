@@ -9,6 +9,7 @@ import Contact from './pages/Contact.jsx'
 import About from './pages/About.jsx'
 import Work from './pages/Work.jsx'
 import ProjectsPage from './pages/ProjectsPage.jsx'
+import Error404 from './pages/Error404.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '*',
-        element: <ErrorPage />
+        element: <Error404 />
       },
       {
         index: true,

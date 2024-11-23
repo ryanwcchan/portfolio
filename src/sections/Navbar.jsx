@@ -32,8 +32,20 @@ function NavItems({ pages }) {
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef();
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    if (savedTheme) {
+      setTheme(savedTheme);
+
+      if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    }
+
     function handleClickOutside(e) {
       if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
         setIsOpen(false);
@@ -53,6 +65,12 @@ export default function Navbar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  function toggleTheme() {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+  }
 
   function toggleMenu() {
     setIsOpen((prevState) => !prevState);
@@ -93,7 +111,7 @@ export default function Navbar() {
           <NavLink to={"/"}>
             <h1
               className="text-3xl text-white max-w-[100px]
-            break-words text-center absolute m-2 mt-6 ml-5"
+            break-words text-center absolute top-6 left-1/2 -translate-x-1/2"
             >
               <span className="text-green-500 font-bold">{"{"}</span>
               <span className="text-blue-500 font-bold hover:text-blue-900">
@@ -108,6 +126,11 @@ export default function Navbar() {
             <NavItems pages={pages} />
           </nav>
         </div>
+        <button 
+          onClick={toggleTheme} 
+          className="py-4 my-6">
+          <i className={`absolute bottom-[3rem] font-bold text-4xl ${theme === "dark" ? "fa-regular fa-sun left-[35%]" : "fa-regular fa-moon left-[40%]"}`}></i>
+        </button>
       </div>
     </header>
   );
