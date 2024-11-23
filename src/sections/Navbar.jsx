@@ -70,6 +70,12 @@ export default function Navbar() {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
+
+    if (newTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   }
 
   function toggleMenu() {
@@ -84,14 +90,16 @@ export default function Navbar() {
         <button
           onClick={toggleMenu}
           className={`transform duration-100 ease-in-out ${
-            isOpen ? "translate-x-[150%]" : "translate-x-0"
-          } text-neutral-400 hover:text-white focus:outline-none lg:hidden flex p-4`}
+            isOpen ? "translate-x-[250%]" : "translate-x-0"
+          }text-neutral-400 hover:text-white focus:outline-none lg:hidden 
+          flex p-4`}
           aria-label="toggle menu"
         >
           <img
             src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
             alt="toggle"
-            className="w-12 h-12"
+            className={`w-12 h-12 transition-all duration-300 ease-in-out ${
+              isOpen ? "translate-x-[250%]" : ""}`}
           />
         </button>
       </div>
@@ -100,9 +108,9 @@ export default function Navbar() {
       <div
         className={`lg:translate-x-0 ${
           isOpen ? "translate-x-0" : "translate-x-[-100%]"
-        }  transition-all duration-300 ease-in-out fixed h-full border-r-4 
-        border-blue-900 px-2 bg-gradient-to-l
-        after:first:from-slate-800 to-slate-950`}
+        }  transition-all duration-300 ease-in-out fixed h-full border-r-4
+        border-blue-900 px-2 bg:white dark:bg-gradient-to-l
+        dark:after:first:from-slate-800 dark:to-slate-950`}
       >
         <div
           className="cursor-pointer"
