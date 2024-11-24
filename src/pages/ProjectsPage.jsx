@@ -1,13 +1,21 @@
-import ProjectCarousel from "../components/ProjectCarousel"
-import Projects from "../sections/Projects"
+import { myProjects } from "../constants"
+import ProjectCard from "../components/ProjectCard"
 
 export default function ProjectsPage() {
   return (
     <div className="w-full h-full flex flex-col items-center min-h-screen">
-      <h1 className="text-5xl font-semibold m-6">Featured Projects</h1>
+      <h1 className="text-5xl font-semibold m-6">My Projects</h1>
       <div className="flex flex-wrap w-full justify-center">
-        {/* <Projects /> */}
-        <ProjectCarousel />
+        <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-4 my-6">
+          {myProjects.map((project, index) => (
+            <ProjectCard 
+              key={index} 
+              title={project.title} 
+              tools={project.techStack}
+              desc={project.description}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )

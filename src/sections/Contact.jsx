@@ -13,7 +13,6 @@ export default function Contact() {
           <p className="text-lg">Email: ryanwcchan@gmail.com</p>
         </div>
         <div>
-          <h1 className="text-2xl font-bold">Get in Touch</h1>
           <p className="text-lg">If you have any questions or would like to collaborate, feel free to reach out to me.</p>
         </div>
         <form 

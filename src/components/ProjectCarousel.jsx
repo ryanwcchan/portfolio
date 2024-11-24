@@ -26,25 +26,25 @@ export default function ProjectCarousel({ img }) {
           <div
             key={index}
             className="bg-green-400 dark:bg-green-600 p-2 rounded-lg text-center font-bold
-            flex items-center justify-center h-fit"
+            flex items-center justify-center h-fit text-sm"
           >
             {tool}
           </div>
         ))}
       </div>
-      <div className="relative flex justify-center items-center">
+      <div className="flex justify-center items-center">
         {/* Left Arrow Button */}
-        <div className="absolute z-50 left-0">
-          <button
-            onClick={handlePrevClick}
-            className="bg-blue-500 hover:bg-blue-300 text-gray-200 font-bold py-2 px-4 rounded-lg"
-          >
-            &lt;
-          </button>
-        </div>
-
+        <div className="left-0">
+            <button
+              onClick={handlePrevClick}
+              className="bg-blue-500 hover:bg-blue-300 text-gray-200 font-bold py-2 px-4 text-2xl lg:text-3xl"
+            >
+              &lt;
+            </button>
+          </div>
         {/* Project Image */}
-        <div className="relative flex flex-col items-center">
+        <div className="relative flex flex-col items-center border-4 border-blue-500 rounded-sm">
+          
           <img
             src={
               img
@@ -66,14 +66,14 @@ export default function ProjectCarousel({ img }) {
               );
             })}
           </div>
+          
         </div>
-
         {/* Right Arrow Button */}
-        <div className="absolute z-50 right-0">
-          <button
-            onClick={handleNextClick}
-            className="bg-blue-500 hover:bg-blue-300 text-gray-200 font-bold py-2 px-4 rounded-lg"
-          >
+        <div className="right-0">
+            <button
+              onClick={handleNextClick}
+              className="bg-blue-500 hover:bg-blue-300 text-gray-200 font-bold py-2 px-4 text-2xl lg:text-3xl"
+            >
             &gt;
           </button>
         </div>

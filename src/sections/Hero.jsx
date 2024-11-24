@@ -26,10 +26,10 @@ export default function Hero() {
             Software Developer by Night
           </p>
         </div>
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold
           py-4 px-6 rounded"><a href="">Download CV</a></button>
-        </div>
+        </div> */}
       </div>
 
       <div className="absolute bottom-10 animate-bounce">
