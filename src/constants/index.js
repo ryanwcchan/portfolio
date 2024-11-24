@@ -8,22 +8,52 @@ export const pages = [
 
 export const myProjects = [
     {
-        id: 1,
+        title: "Gym Workout App",
+        description: "A gym workout generator built with React and Tailwind CSS",
+        image: "gym-workout-app.png",
+        techStack: ["React", "Tailwind CSS"],
+        githubLink: "https://github.com/ryanwcchan/react-gym-app",
+        demoLink: "https://your-demo-link.com/gym-workout-app",
+    },
+    {
+        title: "Transcription App",
+        description: "A transcription app built with React and Web Speech API",
+        image: "transcription-app.png",
+        techStack: ["React", "Tailwind CSS", "Web Speech API"],
+        githubLink: "https://github.com/ryanwcchan/react-transcription-app",
+        demoLink: "https://your-demo-link.com/transcription-app",
+    },
+    {
+        title: "NASA APOD",
+        description: "Using NASA APOD API to display photo, description, title and date of astronomy picture of the day",
+        image: "/images/nasa-picture-of-the-day.png",
+        techStack: ["React", "API"],
+        githubLink: "https://github.com/ryanwcchan/react-nasa-app",
+        demoLink: "https://your-demo-link.com/nasa-picture-of-the-day",
+    },
+    {
         title: "Shopping Cart",
-        description: "A simple shopping cart application built with React and React Router",
+        description: "Shopping cart application built with React and React Router",
         image: "/images/shopping-cart.png",
         techStack: ["React", "React Router", "Vanilla CSS"],
-        githubLink: "https://github.com/your-github-username/shopping-cart",
-        demoLink: "https://your-demo-link.com/shopping-cart",
+        githubLink: "https://github.com/ryanwcchan/shopping-cart",
+        demoLink: "https://shopping-cart-ashen-three.vercel.app/store",
     }, 
     {
-        id: 2,
-        title: "Weather App",
-        description: "A weather app built with React and OpenWeather API",
-        image: "/images/weather-app.png",
-        techStack: ["React", "OpenWeather API", "CSS"],
-        githubLink: "https://github.com/your-github-username/weather-app",
-        demoLink: "https://your-demo-link.com/weather-app",
+        title: "Memory Card Game",
+        description: "A memory card game using card details from Yu-gi-oh! API  built with React and Tailwind CSS",
+        image: "/images/memory-card-game.png",
+        techStack: ["React", "Tailwind CSS"],
+        githubLink: "https://github.com/your-github-username/memory-card-game",
+        demoLink: "https://your-demo-link.com/memory-card-game",
+    },
+    {
+        title: "Battleship Game",
+        description: "A classic battleship game built with HTML, CSS and JavaScript",
+        image: "/images/battleship-game.png",
+        techStack: ["HTML", "CSS", "JavaScript"],
+        githubLink: "https://github.com/ryanwcchan/project-battleship",
+        demoLink: "https://ryanwcchan.github.io/project-battleship/",
     }
 ]
 

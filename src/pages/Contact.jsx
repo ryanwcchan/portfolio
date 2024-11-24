@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <div>Contact</div>
+    <div className='w-full h-full flex flex-col items-center min-h-screen'>Contact</div>
   )
 }

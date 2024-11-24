@@ -4,11 +4,15 @@ import { useState } from "react";
 function ExperienceCard({ title, company, duration, bullets }) {
   return (
     <div className="space-y-4 p-6">
-      <h1 className="text-2xl font-semibold">{title}</h1>
-      <p>{company}</p>
-      <p>{duration}</p>
-      <ul>{bullets ? bullets.map((bullet, index) => 
-        <li key={index}>{bullet}</li>) : null}
+      <h1 className="text-4xl font-semibold">{title}</h1>
+      <p className="text-2xl">{company}</p>
+      <p className="text-2xl">{duration}</p>
+      <ul className="list-disc pl-4">{bullets ? bullets.map((bullet, index) => 
+        <li 
+          key={index}
+        >
+          {bullet}
+        </li>) : null}
       </ul>
     </div>
   );
@@ -24,7 +28,7 @@ export default function Experience() {
   const selectedJob = experience.find((job) => job.id === selectedJobId);
 
   return (
-    <div className="flex flex-col max-w-6xl mb-10 h-min-screen w-full">
+    <div id="experience" className="flex flex-col max-w-6xl mb-10 h-min-screen w-full">
       <h1
         className="text-4xl text-blue-500 py-6 underline 
       decoration-green-500 font-bold"

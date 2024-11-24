@@ -9,7 +9,7 @@ function SkillsList({ list, title }) {
         {list.map((skill, index) => (
           <div
             key={index}
-            className="bg-green-600 p-2 rounded-lg text-center font-bold flex items-center justify-center h-fit"
+            className="bg-green-400 dark:bg-green-600 p-2 rounded-lg text-center font-bold flex items-center justify-center h-fit"
           >
             {skill}
           </div>
@@ -21,7 +21,7 @@ function SkillsList({ list, title }) {
 
 export default function Intro() {
   return (
-    <div className="flex flex-col space-y-4 max-w-6xl mb-10 h-min-screen w-full">
+    <div id="intro" className="flex flex-col space-y-4 max-w-6xl mb-10 h-min-screen w-full">
       <h1 className="text-4xl text-blue-500 py-6 font-bold">
         My{" "}
         <span className="font-bold underline decoration-green-500">Skills</span>
