@@ -7,7 +7,7 @@ export default function Projects() {
       <h1 className="text-4xl text-blue-500 py-6 underline decoration-green-500 font-bold">Projects</h1>
       <div>
         <h1 className="text-3xl font-semibold">Frontend</h1>
-        <div className="grid grid-col-1 lg:grid-cols-2 auto-rows-fr">
+        <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
           {myProjects.map((project, index) => (
             <ProjectCard 
               key={index} 

@@ -1,12 +1,10 @@
 export default function ProjectCard({ title, img, tools, desc }) {
   return (
-    <div className="flex flex-col items-center space-y-4 m-5">
-        <div className="flex items-center justify-center">
-          <h2 className="text-4xl text-center text-blue-500 underline
-          decoration-green-500 font-semibold">
-            {title}
-          </h2>
-        </div>
+    <div className="flex flex-col items-center space-y-4 m-5 justify-center">
+        <h2 className="text-3xl text-center text-blue-500 underline
+        decoration-green-500 font-semibold">
+          {title}
+        </h2>
         <div className="flex gap-2">
           {tools.map((item) => (
             <div
@@ -24,7 +22,7 @@ export default function ProjectCard({ title, img, tools, desc }) {
               alt="Image of project"
           />
         </div>
-        <p>{desc ? desc : "Description"}</p>
+        {/* <p className="text-center">{desc ? desc : "Description"}</p> */}
     </div>
   )
 }
