@@ -10,7 +10,7 @@ export default function Hero() {
             {/* <span className="text-gray-500 font-bold"> | </span> */}
           </h1>
           <h1 className="text-4xl md:text-4xl lg:text-6x font-bold text-center">
-            <span className="text-blue-400">Aspiring Software Developer</span>
+            <span className="text-blue-400">Full-Stack Software Developer</span>
           </h1>
         </div>
         <div className="py-4 w-full flex justify-center space-x-4">
@@ -20,12 +20,12 @@ export default function Hero() {
             href="https://linkedin.com/in/ryanwcchan"
           />
         </div>
-        <div className="text-center pb-4">
+        {/* <div className="text-center pb-4">
           <p>
             Inventory Associate by Day, Passionate
             Software Developer by Night
           </p>
-        </div>
+        </div> */}
         {/* <div className="flex justify-center">
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold
           py-4 px-6 rounded"><a href="">Download CV</a></button>

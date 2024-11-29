@@ -1,11 +1,13 @@
-export default function ProjectCard({ title, img, tools, desc }) {
+import SocialMediaIcon from "./SocialMediaIcon";
+
+export default function ProjectCard({ title, img, tools, desc, githubLink, liveLink, message }) {
   return (
     <div className="flex flex-col items-center space-y-4 justify-center">
         <h2 className="text-3xl text-center text-blue-500 underline
         decoration-green-500 font-semibold">
           {title}
         </h2>
-        <div className="flex gap-2 items-center justify-center">
+        <div className="flex gap-2 items-center justify-center flex-wrap">
           {tools.map((item) => (
             <div
               key={item}
@@ -23,6 +25,20 @@ export default function ProjectCard({ title, img, tools, desc }) {
           />
         </div>
         {/* <p className="text-center">{desc ? desc : "Description"}</p> */}
+        <div className="flex gap-2 items-center justify-center">
+          <SocialMediaIcon icon="github" href={githubLink} />
+          {liveLink ? (
+              <a href={liveLink} target="_blank" className="text-blue-500 font-bold text-2xl">Live Demo</a>
+            ) : (
+              <span className="text-gray-500 font-bold text-2xl">Live Demo</span>
+            )
+          }
+        </div>
+        {message ? (
+          <p className="text-center">{message}</p>
+        ) : (
+          ""
+        )}
     </div>
   )
 }

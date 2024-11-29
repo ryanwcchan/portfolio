@@ -43,18 +43,19 @@ export default function ProjectCarousel({ img }) {
             </button>
           </div>
         {/* Project Image */}
-        <div className="relative flex flex-col items-center border-4 border-blue-500 rounded-sm">
-          
-          <img
-            src={
-              img
-                ? img
-                : "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-            }
-            alt="Project image"
-            className="md:max-w-2xl lg:max-w-2xl w-full h-full object-contain"
-          />
-          <div className="absolute flex gap-2 bottom-4 text-center">
+        <div className="flex flex-col items-center border-4 border-blue-500 rounded-sm">
+          <div className="w-[100%] h-fit bg-slate-950 flex justify-center">
+            <img
+              src={
+                myProjects[currentSlide].image
+                  ? myProjects[currentSlide].image
+                  : "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+              }
+              alt="Project image"
+              className="object-contain"
+            />
+          </div>
+          <div className="flex gap-2 bottom-4 text-center py-4 bg-green-500 w-full items-center justify-center">
             {myProjects.map((s, i) => {
               return (
                 <div
