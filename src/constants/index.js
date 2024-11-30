@@ -96,7 +96,8 @@ export const experience = [
         id: 1,
         company: "Upwork",
         title: "Freelance Web Developer",
-        duration: "2024 - Present",
+        location: "Remote",
+        duration: "Oct. 2024 - Present",
         bullets: [
             "Provided web development services for clients",
             "Collaborated with clients to develop custom web solutions",
@@ -106,7 +107,8 @@ export const experience = [
         id: 2,
         company: "Western Inventory Service",
         title: "Inventory Supervisor",
-        duration: "February 2024 -Present",
+        location: "Ontario Region",
+        duration: "February 2024 - Present",
         bullets: [
             "Managed inventory levels and ensured accurate tracking",
             "Provided training and guidance to employees",
@@ -116,6 +118,7 @@ export const experience = [
         id: 3,
         company: "Western Inventory Service",
         title: "Inventory Associate",
+        location: "Ontario Region",
         duration: "April 2022 - September 2022",
         bullets: [
             "Managed and maintained inventory in a warehouse",
@@ -127,6 +130,7 @@ export const experience = [
         id: 4,
         company: "Facedrive Inc.",
         title: "Frontend Developer & Marketing Intern",
+        location: "Scarborough, ON",
         duration: "April 2021 - August 2021",
         bullets: [
             "Developed a web application using React and Node.js",
@@ -138,6 +142,7 @@ export const experience = [
         id: 5,
         company: "Kumon",
         title: "Tutor & Data Entry",
+        location: "Markham, ON",
         duration: "May 2017 - September 2019",
         bullets: [
             "Tutored students in math and reading",

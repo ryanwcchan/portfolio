@@ -7,13 +7,13 @@ function ExperienceCard({ title, company, duration, bullets }) {
       <h1 className="text-4xl font-semibold">{title}</h1>
       <p className="text-2xl">{company}</p>
       <p className="text-2xl">{duration}</p>
-      <ul className="list-disc pl-4">{bullets ? bullets.map((bullet, index) => 
+      {/* <ul className="list-disc pl-4">{bullets ? bullets.map((bullet, index) => 
         <li 
           key={index}
         >
           {bullet}
         </li>) : null}
-      </ul>
+      </ul> */}
     </div>
   );
 }
