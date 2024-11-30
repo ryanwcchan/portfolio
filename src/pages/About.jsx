@@ -1,91 +1,127 @@
+import Block from "../components/Block";
+
 export default function About() {
   return (
-    <div className='min-h-screen h-full w-full'>
-      <h1 className='text-5xl font-semibold mb-4'>About Me</h1>
-      <h2 className="text-2xl font-semibold my-4">Hi, I'm Ryan!</h2>
-      <div className="flex flex-col gap-6">
-        <p className="text-lg">
-        I am a recent graduate, currently working part-time as an Inventory Supervisor, and I am actively seeking opportunities to start my career in software development. 
-        </p>
-        <p className="text-lg">My passion for software development ignited during my internship at Facedrive, where I had the opportunity to contribute to the development of a website and mobile application. This hands-on experience gave me invaluable insight into the field and strengthened my desire to pursue a career in tech.</p>
-        <p className="text-lg">Recognizing my enthusiasm for development, the CTO at Facedrive recommended I take a React Native course, where I deepened my understanding of software development concepts and honed my technical skills. This experience not only solidified my interest but also laid the foundation for my journey as a developer.</p>
-        <p className="text-lg">To strengthen my skills, I have been actively engaging with The Odin Project, a comprehensive curriculum for aspiring web developers.
-        Through this program, I have enhanced my proficiency in HTML, CSS, JavaScript, and React, and I have completed several projects that demonstrate my ability to build functional, responsive, and user-friendly applications.
-        </p>
-        <p className="text-lg">My academic background, combined with hands-on learning and practical experience, has solidified my understanding of front-end and full-stack development principles. I am eager to bring my skills, enthusiasm, and dedication to a team where I can contribute to impactful projects and grow as a software developer.</p>
+    <div className="min-h-screen h-full w-full max-w-6xl self-center">
+      <div className="flex items-center justify-center flex-col">
+        <img
+          src="/profile-picture.jpeg"
+          alt="Profile Picture"
+          className="w-48 h-48 rounded-full mb-4 object-cover border-4 border-blue-500"
+        />
+        <div className="flex flex-col items-center">
+          <h2 className="text-4xl font-bold mb-4">Hi, I'm Ryan!</h2>
+          <div className="flex items-center gap-4 mb-2">
+            <p className="text-xl">
+              <span className="font-semibold">Email:</span> ryanwcchan@gmail.com
+            </p>
+            <p className="text-xl">
+              <span className="font-semibold">LinkedIn:</span>{" "}
+              <a href="https://linkedin.com/in/ryanwcchan">ryanwcchan</a>
+            </p>
+            <p className="text-xl">
+              <span className="font-semibold">GitHub:</span>{" "}
+              <a href="https://github.com/ryanwcchan">ryanwcchan</a>
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="my-6">
-        <p className="text-lg"><span className="font-semibold">Email:</span> ryanwcchan@gmail.com</p>
-        <p className="text-lg"><span className="font-semibold">LinkedIn:</span> <a href="https://linkedin.com/in/ryanwcchan">ryanwcchan</a></p>
-        <p className="text-lg"><span className="font-semibold">GitHub:</span> <a href="https://github.com/ryanwcchan">ryanwcchan</a></p>
-      </div>
-      <div className='my-6'>
-        <h2 className='text-3xl font-bold mb-4 text-blue-500'>My Education</h2>
-        <p className='text-lg mb-4'>
-          I hold a Bachelor's degree in Information Technology from Ontario Tech University. 
-          Throughout my studies, I had the opportunity to work on diverse and challenging projects 
-          across multiple disciplines. Here are some highlights:
-        </p>
+      <Block />
+      <div className="px-6 py-12 bg-gray-50 dark:bg-gray-900 rounded-b-lg">
+        {/* About Me */}
+        <section className="space-y-8">
+          <h2
+            className="text-3xl text-blue-500 underline 
+          decoration-green-500 font-bold"
+          >
+            About Me
+          </h2>
+          <p className="text-gray-700 dark:text-white leading-relaxed">
+            Growing up, I have always loved building and creating things. From
+            piecing together my own Lego creations to assembling computers with
+            my dad and rendering my first 3D animation with Blender, I loved to
+            learn and create things using technology. I played a lot of flash
+            games when I was a kid, and I started learning Java and C# because
+            of I wanted to create my own games. In high school, I immersed
+            myself in computer science and computer technology classes, where I
+            built basic games using Java, and PC building further cementing my
+            love for technology.
+          </p>
+          <p className="text-gray-700 dark:text-white leading-relaxed">
+            When it was time to choose a career path in university, I considered
+            pursuing game development but ultimately decided to major in
+            Information Technology. While I was uncertain about which specific
+            career to pursue, I knew that my passion for technology would guide
+            me. This decision opened doors to new opportunities and broadened my
+            skill set beyond game development.
+          </p>
+          <p className="text-gray-700 dark:text-white leading-relaxed">
+            Currently, I’m pursuing a career as a software developer, with a
+            focus on web development. I dedicate my free time to learning and
+            refining my development skills through both formal education and
+            self-study.
+          </p>
+        </section>
 
-        {/* Course 1 */}
-        <div className='mb-6'>
-          <h3 className='text-2xl font-semibold'>Database Systems – INFR 3810</h3>
-          <ul className='list-disc list-inside text-lg'>
+        <section className="mt-12">
+          <h2
+            className="text-3xl text-blue-500 underline 
+          decoration-green-500 font-bold pb-8"
+          >
+            Education Highlights
+          </h2>
+          <p className="mb-4">
+            During my time at Ontario Tech University, I gained hands-on
+            experience in database design, cloud deployment, and business
+            intelligence analysis. Highlights include:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-white">
             <li>
-              Designed Entity Relationship Diagrams (ERD) and wrote SQL queries for database modeling and data filtration.
+              Developed an autobiography website using HTML, CSS, JavaScript
+              (jQuery & AngularJS), MongoDB, and PHP for form validation. Users
+              can create and update blog posts through an admin interface.
             </li>
             <li>
-              Developed a Flask app for storing class survey data in MySQL, improving data accessibility for analysis.
+              Collaborated on a medicine shopping website using HTML, CSS,
+              Bootstrap, Python, PostgreSQL, and Django, with user
+              authentication, product categorization, and transaction tracking.
             </li>
             <li>
-              Collaborated on a medicine shopping website using HTML, CSS, Bootstrap, Heroku, Python, PostgreSQL, and Django. 
-              Implemented user authentication, product categorization, and transaction tracking, enabling seamless sales tracking.
+              Developed a Flask app for class survey analysis in MySQL (Database
+              Systems).
+            </li>
+            <li>
+              Deployed Apache web servers in Docker containers on Ubuntu, using
+              OpenStack and Azure. Configured multi-VM deployments with NGINX
+              load balancing and simulated cloud migration from LXD to AWS.
+              Managed EC2 instances on AWS (Cloud Services).
+            </li>
+            <li>
+              Created analytical dashboards using Tableau and Power BI to
+              analyze Kaggle datasets (F1 racing, Chernobyl) and presented
+              insights on performance metrics and historical events (Business
+              Intelligence).
+            </li>
+            <li>
+              Built a Raspberry Pi-powered camera system for recording
+              volleyball games with a smartphone-controlled interface using
+              HTML, CSS, and JavaScript (Capstone Project).
             </li>
           </ul>
-        </div>
+        </section>
 
-        {/* Course 2 */}
-        <div className='mb-6'>
-          <h3 className='text-2xl font-semibold'>Cloud Services – INFR 2670</h3>
-          <ul className='list-disc list-inside text-lg'>
+        {/* Fun Facts */}
+        <section className="mt-12">
+          <h2 className="text-3xl font-semibold text-blue-500">Fun Facts</h2>
+          <ul className="mt-4 list-disc list-inside space-y-2 text-gray-700 dark:text-white">
             <li>
-              Deployed Apache web servers within Docker containers on Ubuntu using OpenStack and Azure environments.
+              My favourite courses in university were my Web Programming,
+              Database Systems, and Cloud services classes.
             </li>
-            <li>
-              Configured multi-VM deployments on Azure with NGINX load balancing for mock web traffic management scenarios.
-            </li>
-            <li>
-              Simulated cloud migration by transferring containerized applications from LXD to AWS.
-            </li>
+            <li>I love hands on experience and learning by doing.</li>
+            <li>Parkour and martial arts tricking enthusiest.</li>
           </ul>
-        </div>
-
-        {/* Course 3 */}
-        <div className='mb-6'>
-          <h3 className='text-2xl font-semibold'>Advanced Business Intelligence – BUSI 2500</h3>
-          <ul className='list-disc list-inside text-lg'>
-            <li>
-              Analyzed Kaggle datasets (F1 racing, Chernobyl) and created analytical portfolios using Power BI, Tableau, and Google Data Studio.
-            </li>
-            <li>
-              Identified key trends and insights, delivering presentations on the impacts of performance metrics and historical events.
-            </li>
-          </ul>
-        </div>
-
-        {/* Capstone Project */}
-        <div className='mb-6'>
-          <h3 className='text-2xl font-semibold'>Capstone Study Project</h3>
-          <ul className='list-disc list-inside text-lg'>
-            <li>
-              Built a Raspberry Pi-powered camera system for recording volleyball games, utilizing off-the-shelf components.
-            </li>
-            <li>
-              Designed a smartphone-controlled interface using HTML, CSS, and JavaScript, offering a cost-effective solution for 
-              capturing game footage.
-            </li>
-          </ul>
-        </div>
+        </section>
       </div>
     </div>
   );

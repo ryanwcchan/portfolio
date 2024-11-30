@@ -97,7 +97,7 @@ export const experience = [
         company: "Upwork",
         title: "Freelance Web Developer",
         location: "Remote",
-        duration: "Oct. 2024 - Present",
+        duration: "2024 - Present",
         bullets: [
             "Provided web development services for clients",
             "Collaborated with clients to develop custom web solutions",

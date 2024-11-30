@@ -7,7 +7,7 @@ export default function Contact() {
       >
         Contact Me
       </h1>
-      <div>
+      <div className="">
         <div>
           <h1 className="text-2xl font-bold">My Contact</h1>
           <p className="text-lg">Email: ryanwcchan@gmail.com</p>
@@ -16,7 +16,7 @@ export default function Contact() {
           <p className="text-lg">If you have any questions or would like to collaborate, feel free to reach out to me.</p>
         </div>
         <form 
-          className='flex flex-col gap-4 mt-4'
+          className='flex flex-col gap-4 mt-4 dark:text-black'
         >
           <div className='flex flex-col'>
             <label 
