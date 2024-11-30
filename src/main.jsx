@@ -10,6 +10,7 @@ import About from './pages/About.jsx'
 import Work from './pages/Work.jsx'
 import ProjectsPage from './pages/ProjectsPage.jsx'
 import Error404 from './pages/Error404.jsx'
+import ProjectDetailsPage from './pages/ProjectDetailsPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,11 @@ const router = createBrowserRouter([
       {
         path: "projects",
         element: <ProjectsPage />
-      }, 
+      },
+      {
+        path: "projects/:title",
+        element: <ProjectDetailsPage />
+      },
       {
         path: "contact",
         element: <ContactPage />

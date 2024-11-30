@@ -1,7 +1,8 @@
 import { myProjects } from "../constants";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-export default function ProjectCarousel({ img }) {
+export default function ProjectCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handlePrevClick = () => {
@@ -18,9 +19,11 @@ export default function ProjectCarousel({ img }) {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-3xl text-center font-semibold">
-        {myProjects[currentSlide].title}
-      </h1>
+      <Link to={`/projects/${encodeURIComponent(myProjects[currentSlide].title)}`}>
+        <h1 className="text-4xl text-center font-bold text-blue-500 underline decoration-green-500 hover:text-red-500">
+          {myProjects[currentSlide].title}
+        </h1>
+      </Link>
       <div className="flex gap-2 items-center justify-center">
         {myProjects[currentSlide].techStack.map((tool, index) => (
           <div
