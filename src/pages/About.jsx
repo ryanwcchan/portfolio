@@ -5,13 +5,13 @@ export default function About() {
     <div className="min-h-screen h-full w-full max-w-6xl self-center">
       <div className="flex items-center justify-center flex-col">
         <img
-          src="/profile-picture.jpeg"
+          src="profile-picture.jpeg"
           alt="Profile Picture"
           className="w-48 h-48 rounded-full mb-4 object-cover border-4 border-blue-500"
         />
         <div className="flex flex-col items-center">
           <h2 className="text-4xl font-bold mb-4">Hi, I'm Ryan!</h2>
-          <div className="flex items-center gap-4 mb-2">
+          <div className="flex flex-col md:flex-row items-center gap-4 mb-2">
             <p className="text-xl">
               <span className="font-semibold">Email:</span> ryanwcchan@gmail.com
             </p>

@@ -2,11 +2,11 @@ import ImageCarousel from "../../components/ImageCarousel"
 
 export default function TranscriptionApp() {
   const images = [
-    "TranscriptionApp/TranscriptionApp_1.png",
-    "TranscriptionApp/TranscriptionApp_2.png",
-    "TranscriptionApp/TranscriptionApp_3.png",
-    "TranscriptionApp/TranscriptionApp_4.png",
-    "TranscriptionApp/TranscriptionApp_5.png",
+    "/TranscriptionApp/TranscriptionApp_1.png",
+    "/TranscriptionApp/TranscriptionApp_2.png",
+    "/TranscriptionApp/TranscriptionApp_3.png",
+    "/TranscriptionApp/TranscriptionApp_4.png",
+    "/TranscriptionApp/TranscriptionApp_5.png",
   ]
 
   return (
