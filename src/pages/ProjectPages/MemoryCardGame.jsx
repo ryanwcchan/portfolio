@@ -2,8 +2,8 @@ import ImageCarousel from "../../components/ImageCarousel"
 
 export default function MemoryCardGame() {
   const images = [
-    "/MemoryCardGame/MemoryCardGame_1.png",
-    "/MemoryCardGame/MemoryCardGame_2.png",
+    "/portfolio/MemoryCardGame/MemoryCardGame_1.png",
+    "/portfolio/MemoryCardGame/MemoryCardGame_2.png",
   ]
 
   return (

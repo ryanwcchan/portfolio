@@ -3,13 +3,13 @@ import ImageCarousel from "../../components/ImageCarousel"
 export default function GymApp() {
 
   const images = [
-    "/GymApp/1.png", 
-    "/GymApp/2.png", 
-    "/GymApp/3.png", 
-    "/GymApp/4.png", 
-    "/GymApp/5.png",
-    "/GymApp/6.png",
-    "/GymApp/GymApp_8.png",
+    "/portfolio/GymApp/1.png", 
+    "/portfolio/GymApp/2.png", 
+    "/portfolio/GymApp/3.png", 
+    "/portfolio/GymApp/4.png", 
+    "/portfolio/GymApp/5.png",
+    "/portfolio/GymApp/6.png",
+    "/portfolio/GymApp/GymApp_8.png",
   ]
   
   return (

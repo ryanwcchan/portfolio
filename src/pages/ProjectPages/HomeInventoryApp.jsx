@@ -2,34 +2,34 @@ import ImageCarousel from "../../components/ImageCarousel"
 
 export default function HomeInventoryApp() {
   const homePage = [
-    "/InventoryApp/InventoryApp_28.png",
-    "/InventoryApp/InventoryApp_29.png",
-    "/InventoryApp/InventoryApp_30.png",
-    "/InventoryApp/InventoryApp_31.png",
+    "/portfolio/InventoryApp/InventoryApp_28.png",
+    "/portfolio/InventoryApp/InventoryApp_29.png",
+    "/portfolio/InventoryApp/InventoryApp_30.png",
+    "/portfolio/InventoryApp/InventoryApp_31.png",
   ]
 
   const itemCategories = [
-    "/InventoryApp/InventoryApp_3.png",
-    "/InventoryApp/InventoryApp_4.png",
-    "/InventoryApp/InventoryApp_34.png",
-    "/InventoryApp/InventoryApp_7.png",
-    "/InventoryApp/InventoryApp_9.png",
+    "/portfolio/InventoryApp/InventoryApp_3.png",
+    "/portfolio/InventoryApp/InventoryApp_4.png",
+    "/portfolio/InventoryApp/InventoryApp_34.png",
+    "/portfolio/InventoryApp/InventoryApp_7.png",
+    "/portfolio/InventoryApp/InventoryApp_9.png",
   ]
 
   const categoriesPage = [
-    "/InventoryApp/InventoryApp_17.png",
-    "/InventoryApp/InventoryApp_18.png",
-    "/InventoryApp/InventoryApp_24.png",
-    "/InventoryApp/InventoryApp_32.png",
-    "/InventoryApp/InventoryApp_33.png",
-    "/InventoryApp/InventoryApp_35.png",
+    "/portfolio/InventoryApp/InventoryApp_17.png",
+    "/portfolio/InventoryApp/InventoryApp_18.png",
+    "/portfolio/InventoryApp/InventoryApp_24.png",
+    "/portfolio/InventoryApp/InventoryApp_32.png",
+    "/portfolio/InventoryApp/InventoryApp_33.png",
+    "/portfolio/InventoryApp/InventoryApp_35.png",
   ]
 
   const deleteItems = [
-    "/InventoryApp/InventoryApp_13.png",
-    "/InventoryApp/InventoryApp_14.png",
-    "/InventoryApp/InventoryApp_15.png",
-    "/InventoryApp/InventoryApp_16.png",
+    "/portfolio/InventoryApp/InventoryApp_13.png",
+    "/portfolio/InventoryApp/InventoryApp_14.png",
+    "/portfolio/InventoryApp/InventoryApp_15.png",
+    "/portfolio/InventoryApp/InventoryApp_16.png",
   ]
 
   return (

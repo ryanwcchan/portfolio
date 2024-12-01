@@ -2,11 +2,11 @@ import ImageCarousel from "../../components/ImageCarousel"
 
 export default function BattleshipGame() {
   const images = [
-    "/BattleshipGame/BattleShip_1.png",
-    "/BattleshipGame/BattleShip_2.png",
-    "/BattleshipGame/BattleShip_3.png",
-    "/BattleshipGame/BattleShip_4.png",
-    "/BattleshipGame/BattleShip_5.png",
+    "/portfolio/BattleshipGame/BattleShip_1.png",
+    "/portfolio/BattleshipGame/BattleShip_2.png",
+    "/portfolio/BattleshipGame/BattleShip_3.png",
+    "/portfolio/BattleshipGame/BattleShip_4.png",
+    "/portfolio/BattleshipGame/BattleShip_5.png",
   ]
 
   return (

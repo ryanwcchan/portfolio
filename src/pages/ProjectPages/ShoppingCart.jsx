@@ -2,13 +2,13 @@ import ImageCarousel from "../../components/ImageCarousel"
 
 export default function ShoppingCart() {
   const images = [
-    "/ShoppingCart/ShoppingCart_1.png",
-    "/ShoppingCart/ShoppingCart_2.png",
-    "/ShoppingCart/ShoppingCart_3.png",
-    "/ShoppingCart/ShoppingCart_4.png",
-    "/ShoppingCart/ShoppingCart_5.png",
-    "/ShoppingCart/ShoppingCart_6.png",
-    "/ShoppingCart/ShoppingCart_7.png",
+    "/portfolio/ShoppingCart/ShoppingCart_1.png",
+    "/portfolio/ShoppingCart/ShoppingCart_2.png",
+    "/portfolio/ShoppingCart/ShoppingCart_3.png",
+    "/portfolio/ShoppingCart/ShoppingCart_4.png",
+    "/portfolio/ShoppingCart/ShoppingCart_5.png",
+    "/portfolio/ShoppingCart/ShoppingCart_6.png",
+    "/portfolio/ShoppingCart/ShoppingCart_7.png",
   ]
 
   return (

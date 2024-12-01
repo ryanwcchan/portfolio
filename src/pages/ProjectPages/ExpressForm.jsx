@@ -2,12 +2,12 @@ import ImageCarousel from "../../components/ImageCarousel"
 
 export default function ExpressValidatorForm() {
   const images = [
-    "/ExpressValidatorForm/ExpressValidatorForm_1.png",
-    "/ExpressValidatorForm/ExpressValidatorForm_2.png",
-    "/ExpressValidatorForm/ExpressValidatorForm_3.png",
-    "/ExpressValidatorForm/ExpressValidatorForm_4.png",
-    "/ExpressValidatorForm/ExpressValidatorForm_5.png",
-    "/ExpressValidatorForm/ExpressValidatorForm_6.png",
+    "/portfolio/ExpressValidatorForm/ExpressValidatorForm_1.png",
+    "/portfolio/ExpressValidatorForm/ExpressValidatorForm_2.png",
+    "/portfolio/ExpressValidatorForm/ExpressValidatorForm_3.png",
+    "/portfolio/ExpressValidatorForm/ExpressValidatorForm_4.png",
+    "/portfolio/ExpressValidatorForm/ExpressValidatorForm_5.png",
+    "/portfolio/ExpressValidatorForm/ExpressValidatorForm_6.png",
   ]
 
   return (
