@@ -2,12 +2,12 @@ import ImageCarousel from "../../components/ImageCarousel"
 
 export default function MiniMessageBoard() {
   const images = [
-    "/MiniMessageBoard/MiniMessageBoard_1.png",
-    "/MiniMessageBoard/MiniMessageBoard_2.png",
-    "/MiniMessageBoard/MiniMessageBoard_3.png",
-    "/MiniMessageBoard/MiniMessageBoard_4.png",
-    "/MiniMessageBoard/MiniMessageBoard_5.png",
-    "/MiniMessageBoard/MiniMessageBoard_6.png",
+    "MiniMessageBoard/MiniMessageBoard_1.png",
+    "MiniMessageBoard/MiniMessageBoard_2.png",
+    "MiniMessageBoard/MiniMessageBoard_3.png",
+    "MiniMessageBoard/MiniMessageBoard_4.png",
+    "MiniMessageBoard/MiniMessageBoard_5.png",
+    "MiniMessageBoard/MiniMessageBoard_6.png",
   ]
 
   return (

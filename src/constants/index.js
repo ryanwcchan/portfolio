@@ -10,7 +10,7 @@ export const myProjects = [
     {
         title: "Home Inventory App",
         description: "A home inventory app built with PERN stack",
-        image: "/InventoryApp/InventoryApp_28.png",
+        image: "InventoryApp/InventoryApp_28.png",
         techStack: ["React", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL"],
         githubLink: "https://github.com/ryanwcchan/inventory-app",
         demoLink: "",
@@ -18,7 +18,7 @@ export const myProjects = [
     {
         title: "Shopping Cart",
         description: "Shopping cart application built with React and React Router",
-        image: "/ShoppingCart/ShoppingCart_2.png",
+        image: "ShoppingCart/ShoppingCart_2.png",
         techStack: ["React", "React Router", "Vanilla CSS", "Fake Store API"],
         githubLink: "https://github.com/ryanwcchan/shopping-cart",
         demoLink: "https://shopping-cart-ashen-three.vercel.app/store",
@@ -26,7 +26,7 @@ export const myProjects = [
     {
         title: "Gym Workout App",
         description: "A gym workout generator built with React and Tailwind CSS",
-        image: "/GymApp/3.png",
+        image: "GymApp/3.png",
         techStack: ["React", "Tailwind CSS"],
         githubLink: "https://github.com/ryanwcchan/react-gym-app",
         demoLink: "https://ryanwcchan.github.io/react-gym-app/",
@@ -34,7 +34,7 @@ export const myProjects = [
     {
         title: "Transcription App",
         description: "A transcription app built with React and Web Speech API",
-        image: "/TranscriptionApp/TranscriptionApp_2.png",
+        image: "TranscriptionApp/TranscriptionApp_2.png",
         techStack: ["React", "Tailwind CSS"],
         githubLink: "https://github.com/ryanwcchan/react-transcription-app",
         demoLink: "",
@@ -42,7 +42,7 @@ export const myProjects = [
     {
         title: "NASA APOD",
         description: "Using NASA APOD API to display photo, description, title and date of astronomy picture of the day",
-        image: "/NASAAPOD/NASA_APOD_5.png",
+        image: "NASAAPOD/NASA_APOD_5.png",
         techStack: ["React", "Tailwind CSS", "NASA APOD API"],
         githubLink: "https://github.com/ryanwcchan/react-nasa-app",
         demoLink: "https://ryanwcchan.github.io/react-nasa-app/",
@@ -50,7 +50,7 @@ export const myProjects = [
     {
         title: "Mini message board",
         description: "A simple message board application built with Express.js, EJS and PostgreSQL",
-        image: "/MiniMessageBoard/MiniMessageBoard_2.png",
+        image: "MiniMessageBoard/MiniMessageBoard_2.png",
         techStack: ["EJS", "Node.js", "Express.js", "PostgreSQL"],
         githubLink: "https://github.com/ryanwcchan/mini-message-board",
         demoLink: "https://mini-message-board-2efz.onrender.com/",
@@ -59,7 +59,7 @@ export const myProjects = [
     {
         title: "Express Validator Form",
         description: "A form validation application built with Express.js, EJS and PostgreSQL",
-        image: "/ExpressValidatorForm/ExpressValidatorForm_2.png",
+        image: "ExpressValidatorForm/ExpressValidatorForm_2.png",
         techStack: ["EJS", "Node.js", "Express.js", "PostgreSQL"],
         githubLink: "https://github.com/ryanwcchan/express-validator-form",
         demoLink: "",
@@ -67,7 +67,7 @@ export const myProjects = [
     {
         title: "Memory Card Game",
         description: "A memory card game using card details from Yu-gi-oh! API  built with React and Tailwind CSS",
-        image: "/MemoryCardGame/MemoryCardGame_1.png",
+        image: "MemoryCardGame/MemoryCardGame_1.png",
         techStack: ["React", "Tailwind CSS", "Yu-gi-oh! API"],
         githubLink: "https://github.com/ryanwcchan/memory-card-game",
         demoLink: "https://ryanwcchan.github.io/memory-card-game/",
@@ -75,7 +75,7 @@ export const myProjects = [
     {
         title: "Battleship Game",
         description: "A classic battleship game built with HTML, CSS and JavaScript",
-        image: "/BattleshipGame/BattleShip_1.png",
+        image: "BattleshipGame/BattleShip_1.png",
         techStack: ["HTML", "CSS", "JavaScript"],
         githubLink: "https://github.com/ryanwcchan/project-battleship",
         demoLink: "https://ryanwcchan.github.io/project-battleship/",

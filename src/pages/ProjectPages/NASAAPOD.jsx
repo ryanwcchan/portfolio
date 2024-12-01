@@ -2,11 +2,11 @@ import ImageCarousel from "../../components/ImageCarousel"
 
 export default function NASAAPOD() {
   const images = [
-    "/NASAAPOD/NASA_APOD_1.png",
-    "/NASAAPOD/NASA_APOD_2.png",
-    "/NASAAPOD/NASA_APOD_3.png",
-    "/NASAAPOD/NASA_APOD_4.png",
-    "/NASAAPOD/NASA_APOD_5.png",
+    "NASAAPOD/NASA_APOD_1.png",
+    "NASAAPOD/NASA_APOD_2.png",
+    "NASAAPOD/NASA_APOD_3.png",
+    "NASAAPOD/NASA_APOD_4.png",
+    "NASAAPOD/NASA_APOD_5.png",
   ]
 
   return (
