@@ -50,12 +50,12 @@ const router = createBrowserRouter([
         path: "work",
         element: <Work />
       }
-    ]
+    ],
   }
-])
+], { basename: "/portfolio" })
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode basename="/portolio">
+  <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>
 )
