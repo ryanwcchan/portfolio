@@ -55,7 +55,7 @@ const router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <StrictMode basename="/portolio">
     <RouterProvider router={router} />
   </StrictMode>
 )
