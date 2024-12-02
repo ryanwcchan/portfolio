@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function ProjectCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handlePrevClick = () => {
     setCurrentSlide((prevSlide) =>
@@ -17,6 +18,14 @@ export default function ProjectCarousel() {
     );
   };
 
+  function handleImageClick() {
+    setIsModalOpen(true);
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="space-y-4">
       <Link to={`/projects/${encodeURIComponent(myProjects[currentSlide].title)}`}>
@@ -24,7 +33,7 @@ export default function ProjectCarousel() {
           {myProjects[currentSlide].title}
         </h1>
       </Link>
-      <div className="flex gap-2 items-center justify-center">
+      <div className="flex flex-wrap gap-2 items-center justify-center">
         {myProjects[currentSlide].techStack.map((tool, index) => (
           <div
             key={index}
@@ -46,7 +55,10 @@ export default function ProjectCarousel() {
             </button>
           </div>
         {/* Project Image */}
-        <div className="flex flex-col items-center border-4 border-blue-500 rounded-sm">
+        <div 
+          className="flex flex-col items-center border-4 border-blue-500 rounded-sm"
+          onClick={handleImageClick}
+        >
           <div className="w-[100%] h-fit bg-slate-950 flex justify-center">
             <img
               src={
@@ -82,6 +94,45 @@ export default function ProjectCarousel() {
           </button>
         </div>
       </div>
+
+      {isModalOpen && (
+        <div
+          className="fixed flex-col inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
+        >
+          <div className="flex">
+            <div className="left-0">
+              <button
+                onClick={handlePrevClick}
+                className="bg-blue-500 hover:bg-blue-300 text-gray-200 font-bold py-2 px-4 text-2xl lg:text-3xl"
+              >
+                &lt;
+              </button>
+            </div>
+            <button
+              onClick={handleCloseModal}
+              className="bg-blue-500 hover:bg-blue-300 text-gray-200 font-bold py-2 px-4">
+              Close
+            </button>
+            <div className="right-0">
+              <button
+                onClick={handleNextClick}
+                className="bg-blue-500 hover:bg-blue-300 text-gray-200 font-bold py-2 px-4 text-2xl lg:text-3xl"
+              >
+                &gt;
+              </button>
+            </div>
+          </div>
+          <img
+            src={
+              myProjects[currentSlide].image
+                ? myProjects[currentSlide].image
+                : "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+            }
+            alt="Enlarged project image"
+            className="max-w-full max-h-full"
+          />
+        </div>
+      )}
     </div>
   );
 }

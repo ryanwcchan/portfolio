@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 export default function Contact() {
   const [formStatus, setFormStatus] = useState("");
   const [formErrors, setFormErrors] = useState({});
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const form = useRef();
 
   const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -39,6 +40,7 @@ export default function Contact() {
     e.preventDefault();
 
     if (validateForm()) {
+      setIsButtonDisabled(true);
       emailjs
         .sendForm(serviceID, templateID, form.current, key)
         .then(
@@ -46,10 +48,15 @@ export default function Contact() {
             console.log("Success!");
             setFormStatus("success");
             form.current.reset();
+
+            setTimeout(() => {
+              setIsButtonDisabled(false);
+            }, 10000);
           },
           (error) => {
             console.error("Failed...", error.text);
             setFormStatus("error");
+            setIsButtonDisabled(false);
           }
         );
     } else {
