@@ -94,7 +94,7 @@ export const education =
 export const experience = [
     {
         id: 1,
-        company: "Upwork",
+        company: "Upwork | Fiverr",
         title: "Freelance Web Developer",
         location: "Remote",
         duration: "2024 - Present",
@@ -108,7 +108,7 @@ export const experience = [
         company: "Western Inventory Service",
         title: "Inventory Supervisor",
         location: "Ontario Region",
-        duration: "February 2024 - Present",
+        duration: "January 2024 - Present",
         bullets: [
             "Managed inventory levels and ensured accurate tracking",
             "Provided training and guidance to employees",
