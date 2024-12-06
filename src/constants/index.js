@@ -13,7 +13,8 @@ export const myProjects = [
         image: "InventoryApp/InventoryApp_28.png",
         techStack: ["React", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL"],
         githubLink: "https://github.com/ryanwcchan/inventory-app",
-        demoLink: "",
+        demoLink: "https://inventory-app-24a9.onrender.com/",
+        message: "App uses Render free tier PostgreSQL which may have expired."
     },
     {
         title: "Shopping Cart",
