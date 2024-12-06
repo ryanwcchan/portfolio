@@ -1,6 +1,16 @@
 import Block from "../components/Block";
 
 export default function About() {
+  const handleCopy = () => {
+    try {
+      navigator.clipboard.writeText("ryanwcchan@gmail.com");
+      alert("Email copied to clipboard!");
+    } catch (error) {
+      console.error("Failed to copy email:", error);
+      alert("Failed to copy email. Please try again.");
+    }
+  };
+
   return (
     <div className="min-h-screen h-full w-full max-w-6xl self-center">
       <div className="flex items-center justify-center flex-col">
@@ -13,15 +23,16 @@ export default function About() {
           <h2 className="text-4xl font-bold mb-4">Hi, I'm Ryan!</h2>
           <div className="flex flex-col md:flex-row items-center gap-4 mb-2">
             <p className="text-xl">
-              <span className="font-semibold">Email:</span> ryanwcchan@gmail.com
+              <span className="font-semibold">Email:</span> 
+              <span onClick={handleCopy} className="cursor-pointer hover:underline hover:text-red-500" title="Copy to clipboard">ryanwcchan@gmail.com</span>
             </p>
             <p className="text-xl">
               <span className="font-semibold">LinkedIn:</span>{" "}
-              <a href="https://linkedin.com/in/ryanwcchan">ryanwcchan</a>
+              <a href="https://linkedin.com/in/ryanwcchan" target="_blank" className="hover:underline hover:text-red-500">ryanwcchan</a>
             </p>
             <p className="text-xl">
               <span className="font-semibold">GitHub:</span>{" "}
-              <a href="https://github.com/ryanwcchan">ryanwcchan</a>
+              <a href="https://github.com/ryanwcchan" target="_blank" className="hover:underline hover:text-red-500">ryanwcchan</a>
             </p>
           </div>
         </div>
