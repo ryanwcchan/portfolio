@@ -2,6 +2,10 @@
 
 Welcome to my portfolio website! This project showcases my skills, projects, and experiences as a software developer. It's a platform where you can learn about my background, explore my work, and get in touch with me.
 
+## Link
+
+https://ryanwcchan.github.io/portfolio/
+
 ## Features
 
 - **About Me**: A brief introduction about who I am and my journey as a developer.
