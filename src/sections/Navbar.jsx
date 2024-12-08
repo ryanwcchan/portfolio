@@ -150,7 +150,7 @@ export default function Navbar() {
           onClick={() => console.log("Logo clicked")}
         >
           <NavLink to={"/"}>
-            <h1
+            {/* <h1
               className="text-3xl text-white max-w-[100px]
             break-words text-center absolute top-6 left-1/2 -translate-x-1/2"
             >
@@ -159,7 +159,14 @@ export default function Navbar() {
                 RC
               </span>
               <span className="text-green-500 font-bold">{"}"}</span>
-            </h1>
+            </h1> */}
+            <div className="absolute top-6 left-1/2 -translate-x-1/2">
+              <img
+                src="logo-cropped.png"
+                alt="logo"
+                className="w-16 h-16 object-cover rounded-full"
+              />
+            </div>
           </NavLink>
         </div>
         <div className="flex flex-col justify-center items-center h-full">
@@ -170,7 +177,7 @@ export default function Navbar() {
         <button 
           onClick={toggleTheme} 
           className="py-4 my-6">
-          <i className={`absolute bottom-[3rem] font-bold text-4xl ${theme === "dark" ? "fa-regular fa-sun left-[35%]" : "fa-regular fa-moon left-[40%]"}`}></i>
+          <i className={`absolute bottom-[3rem] font-bold text-4xl ${theme === "dark" ? "fa-regular fa-moon left-[40%]" : "fa-regular fa-sun left-[35%]"}`}></i>
         </button>
       </div>
     </header>
