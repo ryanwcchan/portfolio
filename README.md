@@ -1,10 +1,13 @@
-# Portfolio Website
+# [OLD] Personal Website
 
 Welcome to my portfolio website! This project showcases my skills, projects, and experiences as a software developer. It's a platform where you can learn about my background, explore my work, and get in touch with me.
 
 ## Link
-
+# THIS IS MY OLD PERSONAL WEBSITE
 https://ryanwcchan.github.io/portfolio/
+
+# MY NEW PERSONAL WEBSITE
+[ryanwcchan.com](https://www.ryanwcchan.com/)
 
 ## Features
 
